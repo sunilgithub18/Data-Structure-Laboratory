@@ -70,12 +70,10 @@ class DepartmentLibrary:
     
     #4. Delete the duplicate entries
     def deleteDuplicates(self):
-        
-        dupList=[]
-        i=0
         #Find duplicates
         flag=True
         i=0
+        j=0
         while(flag):
             count=0
             j=i+1
@@ -139,6 +137,7 @@ while(choice !=7):
     elif (choice ==4):
         lib.deleteDuplicates()
     elif (choice ==5):
+        lib.initialization()
         lib.moreCost()
     elif (choice ==6):
         lib.underCostList()
