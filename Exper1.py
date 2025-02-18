@@ -36,8 +36,7 @@ class DepartmentLibrary:
         self.newBookList=[]#Books cost less than 500
     
     def initialization(self):
-        self.N=0
-        self.bookList=[]
+        self.newBookList.clear()
     
     #1. Read Book Details
     def getBookDetail(self,nob):
